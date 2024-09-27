@@ -1,0 +1,19 @@
+.loyout {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.main-content {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .main-content {
+        width: 80%;
+        margin-left: 20%;
+    }
+
+}

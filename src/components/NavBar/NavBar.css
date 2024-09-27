@@ -1,0 +1,119 @@
+.hide-on-small-screen {
+    display: none;
+}
+
+.header_logo {
+    color: #000000;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}  
+.header_sublist {
+
+}
+
+.header_sublist_item{
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: #4a4a4a;
+    font-size: 12px;
+}
+
+.header_sublist_item:hover{
+    color: #000;
+}
+
+.header_nav_link {
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: #4a4a4a;
+    font-size: 18px;
+}
+
+.header_nav_link:hover {
+    color: #000;
+}
+
+.header_telegram_btn {
+    display: none;
+}
+
+.header_telegram_icon {
+
+}
+
+.header_burger {
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header_row {
+    width: 30px;
+    height: 4px;
+    background-color: #000;
+}  
+
+li{
+    margin-top: 15px;
+}
+
+@media (min-width: 768px) {  
+    .hide-on-small-screen {
+        display: block; /* На великих екранах завжди показуємо nav_bar */
+    }
+    
+    .show-nav-bar {
+        display: block; /* На великих екранах показуємо nav_bar */
+    }
+
+    .header_logo {
+        color: #000;
+        font-size: 30px;
+    }
+
+    .header_sublist_item{
+        margin-top: 10px;
+    }
+
+    .header_sublist {
+        
+    }
+    
+    .header_telegram_btn {
+        padding: 10px 20px;
+        display: flex;
+        border-radius: 30px;
+        border: 1px solid #000000;
+        color: #000000;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        margin-top: 120px;
+    }
+
+    .header_telegram_icon {
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    .header_burger {
+        display: none;
+    }
+  }
+
+@keyframes moveAndRotate {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    22% {
+        transform: translate(-150px, 0) rotate(50deg);
+    }
+    66% {
+        transform: translate(0, -150px) rotate(-50deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}  
